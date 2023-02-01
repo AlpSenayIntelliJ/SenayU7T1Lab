@@ -83,7 +83,8 @@ public class UsedCarLot {
     public void moveCar(int indexOfCarToMove, int destinationIndex)
     {
         /* IMPLEMENT ME */
-
+        Car carToMove = inventory.remove(indexOfCarToMove);
+        inventory.add(destinationIndex, carToMove);
     }
 
 }
